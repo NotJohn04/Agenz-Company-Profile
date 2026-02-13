@@ -4,7 +4,7 @@
 
 .app-container {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,4 +19,33 @@
   position: relative;
   transform-origin: center center;
   flex-shrink: 0;
+}
+
+/* ============================================
+   iOS pseudo-fullscreen mode
+   ============================================ */
+.ios-fullscreen .app-container {
+  height: 100lvh;
+}
+
+/* Hide top buttons in iOS fullscreen to maximize content area */
+.ios-fullscreen .home-btn,
+.ios-fullscreen .export-btn,
+.ios-fullscreen .theme-toggle {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Keep only fullscreen exit + nav visible */
+.ios-fullscreen .fullscreen-toggle {
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+}
+
+.ios-fullscreen .nav-controls {
+  bottom: 8px;
 }
