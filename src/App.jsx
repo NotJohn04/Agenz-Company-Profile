@@ -130,31 +130,39 @@ function App() {
     touchStartRef.current = null
   }, [goNext, goPrev])
 
-  // Fullscreen toggle — native API on supported browsers, pseudo-fullscreen on iOS
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  // Fullscreen toggle — try native API first, fall back to pseudo-fullscreen
+  const enterPseudoFullscreen = useCallback(() => {
+    document.body.classList.add('ios-fullscreen')
+    window.scrollTo(0, 1)
+    setIsFullscreen(true)
+  }, [])
 
-  const toggleFullscreen = useCallback(() => {
-    if (document.fullscreenEnabled) {
-      // Standard Fullscreen API (Android, desktop)
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen()
-      } else {
+  const exitPseudoFullscreen = useCallback(() => {
+    document.body.classList.remove('ios-fullscreen')
+    setIsFullscreen(false)
+  }, [])
+
+  const toggleFullscreen = useCallback(async () => {
+    if (isFullscreen) {
+      // Exit
+      if (document.fullscreenElement) {
         document.exitFullscreen()
+      } else {
+        exitPseudoFullscreen()
       }
     } else {
-      // iOS pseudo-fullscreen: hide UI chrome, scroll to minimize Safari bar
-      setIsFullscreen((prev) => {
-        const next = !prev
-        if (next) {
-          document.body.classList.add('ios-fullscreen')
-          window.scrollTo(0, 1)
-        } else {
-          document.body.classList.remove('ios-fullscreen')
+      // Enter — try native first, fall back to pseudo
+      if (document.documentElement.requestFullscreen) {
+        try {
+          await document.documentElement.requestFullscreen()
+        } catch {
+          enterPseudoFullscreen()
         }
-        return next
-      })
+      } else {
+        enterPseudoFullscreen()
+      }
     }
-  }, [])
+  }, [isFullscreen, enterPseudoFullscreen, exitPseudoFullscreen])
 
   useEffect(() => {
     const onFsChange = () => setIsFullscreen(!!document.fullscreenElement)
