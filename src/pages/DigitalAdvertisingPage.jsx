@@ -17,7 +17,7 @@ function DigitalAdvertisingPage() {
           </p>
 
           <div className="da-price-block">
-            <span className="da-price">RM 1,500</span>
+            <span className="da-price">RM 588</span>
             <span className="da-price-unit">/month</span>
           </div>
 
