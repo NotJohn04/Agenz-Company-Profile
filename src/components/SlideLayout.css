@@ -1,0 +1,310 @@
+/* ============================================
+   SLIDE LAYOUT - Reusable decorative shell
+   ============================================ */
+
+.slide-layout {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* Gradient Blobs - more visible */
+.sl-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sl-blob-1 {
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, transparent 70%);
+  top: -280px;
+  right: -180px;
+}
+
+.sl-blob-2 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, transparent 70%);
+  bottom: -280px;
+  left: -180px;
+}
+
+.sl-blob-3 {
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
+  top: -180px;
+  left: -120px;
+}
+
+.sl-blob-4 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  bottom: -220px;
+  right: -120px;
+}
+
+/* New center blobs for depth */
+.sl-blob-5 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+.sl-blob-6 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+
+/* Subtle dot grid */
+.sl-dot-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  z-index: 1;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(6, 182, 212, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Middle area glows & rings - hidden in dark mode */
+.sl-mid-glow,
+.sl-mid-ring,
+.sl-center-circuits {
+  display: none;
+}
+
+.sl-mid-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sl-mid-glow-left {
+  top: 40%;
+  left: 25%;
+}
+
+.sl-mid-glow-right {
+  top: 35%;
+  right: 20%;
+}
+
+.sl-mid-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sl-mid-ring-1 {
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 15%;
+}
+
+.sl-mid-ring-2 {
+  width: 160px;
+  height: 160px;
+  bottom: 25%;
+  right: 12%;
+}
+
+/* Circuit Pattern */
+.sl-circuit-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Horizontal accent lines */
+.sl-h-accent {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.sl-h-accent-top {
+  top: 100px;
+  background: linear-gradient(90deg, transparent 5%, rgba(6, 182, 212, 0.08) 20%, rgba(139, 92, 246, 0.06) 50%, rgba(59, 130, 246, 0.08) 80%, transparent 95%);
+}
+
+.sl-h-accent-bottom {
+  bottom: 100px;
+  background: linear-gradient(90deg, transparent 5%, rgba(59, 130, 246, 0.08) 20%, rgba(6, 182, 212, 0.06) 50%, rgba(139, 92, 246, 0.08) 80%, transparent 95%);
+}
+
+/* Gradient washes - large soft color areas */
+.sl-wash {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: 0;
+}
+
+.sl-wash-tl {
+  width: 900px;
+  height: 600px;
+  top: -100px;
+  left: -100px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.08), transparent);
+}
+
+.sl-wash-br {
+  width: 900px;
+  height: 600px;
+  bottom: -100px;
+  right: -100px;
+  background: linear-gradient(315deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.08), transparent);
+}
+
+.sl-wash-center {
+  width: 700px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, rgba(59, 130, 246, 0.06), rgba(6, 182, 212, 0.03), transparent);
+}
+
+/* Edge gradient strips */
+.sl-edge-strip {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sl-edge-strip-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.3), transparent);
+}
+
+.sl-edge-strip-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.3), transparent);
+}
+
+.sl-edge-strip-left {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.2), transparent);
+}
+
+.sl-edge-strip-right {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.2), transparent);
+}
+
+/* Content Area */
+.sl-content {
+  position: relative;
+  z-index: 10;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Corner Accents - larger & brighter */
+.sl-corner {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.sl-corner-tl {
+  top: 28px;
+  left: 28px;
+  border-top: 2px solid rgba(6, 182, 212, 0.4);
+  border-left: 2px solid rgba(6, 182, 212, 0.4);
+}
+
+.sl-corner-tr {
+  top: 28px;
+  right: 28px;
+  border-top: 2px solid rgba(139, 92, 246, 0.4);
+  border-right: 2px solid rgba(139, 92, 246, 0.4);
+}
+
+.sl-corner-bl {
+  bottom: 28px;
+  left: 28px;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.4);
+  border-left: 2px solid rgba(59, 130, 246, 0.4);
+}
+
+.sl-corner-br {
+  bottom: 28px;
+  right: 28px;
+  border-bottom: 2px solid rgba(139, 92, 246, 0.4);
+  border-right: 2px solid rgba(139, 92, 246, 0.4);
+}
+
+/* Side Accents - taller & brighter */
+.sl-side-accent {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.sl-side-accent-left {
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+}
+
+.sl-side-accent-right {
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+}

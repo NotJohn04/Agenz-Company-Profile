@@ -1,0 +1,144 @@
+/* ============================================
+   SOCIAL MEDIA MANAGEMENT - Dedicated showcase page
+   ============================================ */
+
+.smm-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.smm-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left info column */
+.smm-info {
+  flex: 0 0 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.smm-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.smm-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.smm-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.smm-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.smm-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.smm-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.smm-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.smm-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio column */
+.smm-portfolio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.smm-row-bottom {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.smm-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.smm-portfolio-img {
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  object-fit: cover;
+}
+
+.smm-img-wide {
+  width: 720px;
+  height: 280px;
+}
+
+.smm-img-half {
+  width: 354px;
+  height: 260px;
+}
+
+.smm-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 1px;
+  text-align: center;
+}

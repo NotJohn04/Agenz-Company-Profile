@@ -1,0 +1,43 @@
+/* ============================================
+   PAGE HEADER - Reusable page title
+   ============================================ */
+
+.page-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.page-header-line-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.page-header-line {
+  width: 160px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.5), transparent);
+}
+
+.page-header-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 68px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--blue) 50%, var(--purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.page-header-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.5);
+  letter-spacing: 2px;
+}

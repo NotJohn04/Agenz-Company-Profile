@@ -1,0 +1,166 @@
+/* ============================================
+   CRM INTEGRATION - Dedicated showcase page
+   ============================================ */
+
+.crm-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.crm-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left info column */
+.crm-info {
+  flex: 0 0 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.crm-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.crm-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.crm-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.crm-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.crm-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.crm-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.crm-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crm-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio column - triangle layout */
+.crm-portfolio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.crm-results-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.crm-row-top {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.crm-row-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.crm-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.crm-row-top .crm-img-wrapper {
+  width: 340px;
+  height: 230px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.crm-row-bottom .crm-img-wrapper {
+  width: 460px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.crm-portfolio-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.crm-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 0.5px;
+}

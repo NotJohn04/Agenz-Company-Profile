@@ -1,0 +1,129 @@
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.contact-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+  gap: 24px;
+}
+
+.contact-logo-section {
+  margin-bottom: 0;
+}
+
+.contact-logo {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.contact-cta {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Card Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+
+a.contact-card {
+  cursor: pointer;
+}
+
+a.contact-card:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.04);
+  transform: translateY(-2px);
+}
+
+.contact-card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
+  color: var(--cyan);
+  flex-shrink: 0;
+}
+
+.contact-card-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cyan);
+  opacity: 0.7;
+}
+
+.contact-card-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.8);
+  text-align: center;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Bottom Bar */
+.contact-bottom-bar {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 2px;
+}
+
+.contact-bottom-glow {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), var(--blue), transparent);
+  border-radius: 2px;
+  position: relative;
+}
+
+.contact-bottom-glow::after {
+  content: '';
+  position: absolute;
+  inset: -4px 0;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3), transparent);
+  filter: blur(8px);
+  border-radius: 4px;
+}

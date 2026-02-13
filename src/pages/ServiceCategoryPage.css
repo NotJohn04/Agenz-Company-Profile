@@ -1,0 +1,122 @@
+/* ============================================
+   SERVICE CATEGORY DETAIL PAGE
+   ============================================ */
+
+.svc-cat-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 120px;
+}
+
+.svc-cat-grid {
+  display: grid;
+  gap: 24px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.svc-cat-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.svc-cat-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.svc-cat-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.svc-detail-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 14px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.svc-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.svc-detail-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.svc-detail-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.svc-detail-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.svc-detail-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.4);
+  white-space: nowrap;
+}
+
+.svc-detail-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cyan);
+  letter-spacing: 0.5px;
+}
+
+.svc-detail-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.45);
+  line-height: 1.6;
+}
+
+.svc-detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.svc-detail-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.svc-detail-check {
+  flex-shrink: 0;
+}

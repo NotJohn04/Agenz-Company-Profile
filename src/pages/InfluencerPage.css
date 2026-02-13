@@ -1,0 +1,142 @@
+/* ============================================
+   INFLUENCER MARKETING - Dedicated showcase page
+   ============================================ */
+
+.inf-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.inf-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left info column */
+.inf-info {
+  flex: 0 0 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inf-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.inf-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.inf-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.inf-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.inf-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.inf-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inf-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inf-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio - 2x2 grid of phone screenshots */
+.inf-portfolio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.inf-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.inf-img-wrapper {
+  width: 200px;
+  height: 280px;
+  border-radius: 14px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.inf-portfolio-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+.inf-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 0.5px;
+  text-align: center;
+}

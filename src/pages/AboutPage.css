@@ -1,0 +1,107 @@
+/* ============================================
+   ABOUT PAGE (Page 2)
+   ============================================ */
+
+.about-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 140px;
+  gap: 28px;
+}
+
+/* Hook - big bold opening statement */
+.about-hook {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(245, 245, 245, 0.85);
+  text-align: center;
+  max-width: 1200px;
+  line-height: 1.4;
+}
+
+/* Two-column body */
+.about-body {
+  display: flex;
+  gap: 52px;
+  width: 100%;
+  max-width: 1500px;
+  align-items: flex-start;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-philosophy {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  line-height: 1.7;
+}
+
+.about-mission {
+  max-width: 700px;
+}
+
+.about-mission-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about-mission-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.5);
+  line-height: 1.7;
+}
+
+/* Value cards - 2x2 grid on the right */
+.about-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex-shrink: 0;
+  width: 700px;
+}
+
+.about-value-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 12px;
+  padding: 26px 24px;
+}
+
+.about-value-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-value-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.5);
+  line-height: 1.6;
+}

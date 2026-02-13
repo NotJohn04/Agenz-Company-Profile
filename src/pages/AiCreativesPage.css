@@ -1,0 +1,129 @@
+/* ============================================
+   AI CREATIVES - Dedicated showcase page
+   ============================================ */
+
+.aic-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.aic-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+}
+
+/* Left info column */
+.aic-info {
+  flex: 0 0 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.aic-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.aic-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.aic-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.aic-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.aic-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.aic-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aic-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aic-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio column - stacked vertically, centered */
+.aic-portfolio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aic-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.aic-portfolio-img {
+  max-width: 640px;
+  max-height: 310px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  object-fit: contain;
+}
+
+.aic-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 1px;
+  text-align: center;
+}

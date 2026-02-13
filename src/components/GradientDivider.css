@@ -1,0 +1,24 @@
+/* ============================================
+   GRADIENT DIVIDER - Diamond divider
+   ============================================ */
+
+.gradient-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.gradient-divider-line {
+  width: 180px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), rgba(139, 92, 246, 0.4), transparent);
+}
+
+.gradient-divider-diamond {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  transform: rotate(45deg);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+  flex-shrink: 0;
+}

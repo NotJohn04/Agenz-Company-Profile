@@ -1,0 +1,141 @@
+/* ============================================
+   WEBSITE DESIGN & DEVELOPMENT - Dedicated showcase page
+   ============================================ */
+
+.wd-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.wd-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left info column */
+.wd-info {
+  flex: 0 0 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wd-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.wd-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.wd-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.wd-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wd-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.wd-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wd-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wd-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio column - 2x2 grid */
+.wd-portfolio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.wd-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.wd-img-wrapper {
+  width: 330px;
+  height: 260px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.wd-portfolio-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-position: top;
+}
+
+.wd-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 1px;
+  text-align: center;
+}

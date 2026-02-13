@@ -1,0 +1,157 @@
+/* ============================================
+   AI CHATBOT - Dedicated showcase page
+   ============================================ */
+
+.acb-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+.acb-body {
+  display: flex;
+  gap: 56px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left info column */
+.acb-info {
+  flex: 0 0 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.acb-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.acb-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.55);
+  line-height: 1.7;
+}
+
+.acb-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.acb-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.acb-price-unit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.4);
+}
+
+.acb-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.acb-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acb-check {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Right portfolio - triangle layout */
+.acb-portfolio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.acb-row-top {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.acb-row-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.acb-portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.acb-row-top .acb-img-wrapper {
+  width: 330px;
+  height: 290px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.acb-row-bottom .acb-img-wrapper {
+  width: 440px;
+  height: 290px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  overflow: hidden;
+}
+
+.acb-portfolio-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+.acb-portfolio-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.45);
+  letter-spacing: 0.5px;
+  text-align: center;
+}

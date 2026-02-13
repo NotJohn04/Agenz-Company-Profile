@@ -1,0 +1,22 @@
+/* ============================================
+   APP - Slide controller container
+   ============================================ */
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg);
+}
+
+.scale-wrapper {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  transform-origin: center center;
+  flex-shrink: 0;
+}

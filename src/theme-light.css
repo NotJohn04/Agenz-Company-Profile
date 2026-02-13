@@ -1,0 +1,627 @@
+/* ============================================
+   LIGHT MODE OVERRIDES
+   ============================================ */
+
+[data-theme="light"] {
+  --cyan: #0891B2;
+  --blue: #2563EB;
+  --purple: #7C3AED;
+  --text: #0F0F1A;
+  --bg: #F5F7FA;
+}
+
+/* Slide layout */
+[data-theme="light"] .slide-layout {
+  background: var(--bg);
+}
+
+[data-theme="light"] .sl-blob-1 {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-blob-2 {
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-blob-3 {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-blob-4 {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-blob-5 {
+  display: block;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-blob-6 {
+  display: block;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+}
+[data-theme="light"] .sl-dot-grid {
+  background-image: radial-gradient(rgba(15, 15, 26, 0.07) 1px, transparent 1px);
+}
+
+/* Middle area designs - light mode only, subtle */
+[data-theme="light"] .sl-mid-ring,
+[data-theme="light"] .sl-center-circuits {
+  display: block;
+}
+[data-theme="light"] .sl-mid-ring-1 {
+  border-color: rgba(6, 182, 212, 0.15);
+}
+[data-theme="light"] .sl-mid-ring-2 {
+  border-color: rgba(139, 92, 246, 0.15);
+}
+[data-theme="light"] .sl-center-circuits {
+  opacity: 0.15;
+}
+/* Gradient washes - visible in light mode */
+[data-theme="light"] .sl-wash-tl {
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(59, 130, 246, 0.08), transparent);
+}
+[data-theme="light"] .sl-wash-br {
+  opacity: 1;
+  background: linear-gradient(315deg, rgba(139, 92, 246, 0.12), rgba(59, 130, 246, 0.08), transparent);
+}
+[data-theme="light"] .sl-wash-center {
+  opacity: 1;
+  background: radial-gradient(ellipse, rgba(59, 130, 246, 0.06), rgba(6, 182, 212, 0.04), transparent);
+}
+
+/* Edge gradient strips - colorful in light mode */
+[data-theme="light"] .sl-edge-strip-top {
+  opacity: 1;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 5%, rgba(6, 182, 212, 0.6), rgba(59, 130, 246, 0.45), rgba(139, 92, 246, 0.6), transparent 95%);
+}
+[data-theme="light"] .sl-edge-strip-bottom {
+  opacity: 1;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 5%, rgba(139, 92, 246, 0.6), rgba(59, 130, 246, 0.45), rgba(6, 182, 212, 0.6), transparent 95%);
+}
+[data-theme="light"] .sl-edge-strip-left {
+  opacity: 1;
+  width: 4px;
+  background: linear-gradient(180deg, transparent 5%, rgba(6, 182, 212, 0.45), rgba(59, 130, 246, 0.35), rgba(139, 92, 246, 0.45), transparent 95%);
+}
+[data-theme="light"] .sl-edge-strip-right {
+  opacity: 1;
+  width: 4px;
+  background: linear-gradient(180deg, transparent 5%, rgba(139, 92, 246, 0.45), rgba(59, 130, 246, 0.35), rgba(6, 182, 212, 0.45), transparent 95%);
+}
+
+[data-theme="light"] .sl-h-accent-top {
+  background: linear-gradient(90deg, transparent 5%, rgba(6, 182, 212, 0.25) 20%, rgba(139, 92, 246, 0.18) 50%, rgba(59, 130, 246, 0.25) 80%, transparent 95%);
+}
+[data-theme="light"] .sl-h-accent-bottom {
+  background: linear-gradient(90deg, transparent 5%, rgba(59, 130, 246, 0.25) 20%, rgba(6, 182, 212, 0.18) 50%, rgba(139, 92, 246, 0.25) 80%, transparent 95%);
+}
+
+/* Circuit SVG lines - more visible in light mode */
+[data-theme="light"] .sl-circuit-pattern g {
+  opacity: 0.22 !important;
+}
+[data-theme="light"] .sl-circuit-pattern line {
+  opacity: 0.1 !important;
+}
+
+/* Corners */
+[data-theme="light"] .sl-corner-tl {
+  border-color: rgba(6, 182, 212, 0.45);
+}
+[data-theme="light"] .sl-corner-tr {
+  border-color: rgba(139, 92, 246, 0.45);
+}
+[data-theme="light"] .sl-corner-bl {
+  border-color: rgba(59, 130, 246, 0.45);
+}
+[data-theme="light"] .sl-corner-br {
+  border-color: rgba(139, 92, 246, 0.45);
+}
+
+/* Side accents */
+[data-theme="light"] .sl-side-accent-left {
+  background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.35), transparent);
+}
+[data-theme="light"] .sl-side-accent-right {
+  background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.35), transparent);
+}
+
+/* Page header lines */
+[data-theme="light"] .page-header-line {
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), rgba(139, 92, 246, 0.3), transparent);
+}
+[data-theme="light"] .page-header-subtitle {
+  color: rgba(15, 15, 26, 0.65);
+}
+
+/* ---- COVER PAGE ---- */
+[data-theme="light"] .cover-top-bar-line {
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+}
+[data-theme="light"] .cover-top-bar-text {
+  color: rgba(8, 145, 178, 0.8);
+}
+[data-theme="light"] .cover-tagline {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .cover-divider-line {
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), rgba(139, 92, 246, 0.4), transparent);
+}
+[data-theme="light"] .cover-subtitle {
+  color: rgba(15, 15, 26, 0.6);
+}
+[data-theme="light"] .cover-presented-label {
+  color: rgba(15, 15, 26, 0.5);
+}
+[data-theme="light"] .cover-bottom-bar-glow::after {
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.25), rgba(59, 130, 246, 0.3), transparent);
+}
+/* Logo swap: hide light logo by default, show in light mode */
+.cover-logo-light {
+  display: none;
+}
+[data-theme="light"] .cover-logo-dark {
+  display: none;
+}
+[data-theme="light"] .cover-logo-light {
+  display: block;
+}
+
+/* ---- TABLE OF CONTENTS ---- */
+[data-theme="light"] .toc-title {
+  color: rgba(15, 15, 26, 0.85);
+}
+[data-theme="light"] .toc-line {
+  background: linear-gradient(90deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.1), transparent);
+}
+
+/* ---- ABOUT PAGE ---- */
+[data-theme="light"] .about-hook {
+  color: rgba(15, 15, 26, 0.9);
+}
+[data-theme="light"] .about-philosophy {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .about-mission-text {
+  color: rgba(15, 15, 26, 0.65);
+}
+[data-theme="light"] .about-value-card {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .about-value-desc {
+  color: rgba(15, 15, 26, 0.65);
+}
+
+/* ---- SERVICES PAGE ---- */
+[data-theme="light"] .services-cat-card {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .services-cat-item {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .services-note {
+  color: rgba(15, 15, 26, 0.5);
+}
+
+/* ---- AI CREATIVES PAGE ---- */
+[data-theme="light"] .aic-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .aic-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .aic-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .aic-portfolio-img {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .aic-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- CONTENT CREATION PAGE ---- */
+[data-theme="light"] .cc-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .cc-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .cc-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .cc-portfolio-img {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .cc-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- SOCIAL MEDIA MANAGEMENT PAGE ---- */
+[data-theme="light"] .smm-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .smm-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .smm-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .smm-portfolio-img {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .smm-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- INFLUENCER MARKETING PAGE ---- */
+[data-theme="light"] .inf-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .inf-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .inf-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .inf-img-wrapper {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .inf-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- AI CHATBOT PAGE ---- */
+[data-theme="light"] .acb-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .acb-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .acb-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .acb-img-wrapper {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .acb-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- CRM INTEGRATION PAGE ---- */
+[data-theme="light"] .crm-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .crm-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .crm-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .crm-img-wrapper {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .crm-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- WEBSITE DESIGN PAGE ---- */
+[data-theme="light"] .wd-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .wd-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .wd-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .wd-img-wrapper {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .wd-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- LANDING PAGES PAGE ---- */
+[data-theme="light"] .lp-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .lp-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .lp-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .lp-img-wrapper {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .lp-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- DIGITAL ADVERTISING PAGE ---- */
+[data-theme="light"] .da-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .da-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .da-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .da-result-img {
+  border-color: rgba(6, 182, 212, 0.1);
+  background: rgba(255, 255, 255, 0.5);
+}
+[data-theme="light"] .da-result-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- AI VIDEOS PAGE ---- */
+[data-theme="light"] .aiv-desc {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .aiv-price-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .aiv-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .aiv-portfolio-img {
+  border-color: rgba(6, 182, 212, 0.1);
+}
+[data-theme="light"] .aiv-portfolio-label {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- SERVICE CATEGORY PAGE ---- */
+[data-theme="light"] .svc-detail-card {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .svc-detail-unit {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .svc-detail-desc {
+  color: rgba(15, 15, 26, 0.6);
+}
+[data-theme="light"] .svc-detail-feature {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .svc-detail-tagline {
+  color: #0891B2;
+}
+
+/* ---- PROCESS PAGE ---- */
+[data-theme="light"] .process-step-icon {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.25);
+}
+[data-theme="light"] .process-step-desc {
+  color: rgba(15, 15, 26, 0.65);
+}
+[data-theme="light"] .process-connector line {
+  stroke: rgba(6, 182, 212, 0.25) !important;
+}
+
+/* ---- METRICS PAGE ---- */
+[data-theme="light"] .metric-card {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .metric-desc {
+  color: rgba(15, 15, 26, 0.6);
+}
+
+/* ---- PRICING PAGE ---- */
+[data-theme="light"] .pricing-card {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .pricing-card-highlighted {
+  border-color: var(--cyan);
+  background: rgba(8, 145, 178, 0.06);
+  box-shadow: 0 0 40px rgba(8, 145, 178, 0.12);
+}
+[data-theme="light"] .pricing-period {
+  color: rgba(15, 15, 26, 0.55);
+}
+[data-theme="light"] .pricing-desc {
+  color: rgba(15, 15, 26, 0.6);
+}
+[data-theme="light"] .pricing-feature {
+  color: rgba(15, 15, 26, 0.75);
+}
+[data-theme="light"] .pricing-feature-excluded {
+  color: rgba(15, 15, 26, 0.3);
+}
+[data-theme="light"] .pricing-note-inline {
+  color: rgba(8, 145, 178, 0.8);
+}
+[data-theme="light"] .pricing-guarantee-tag {
+  color: #0891B2;
+}
+[data-theme="light"] .pricing-btn {
+  border-color: rgba(15, 15, 26, 0.15);
+  color: var(--text);
+}
+[data-theme="light"] .pricing-btn:hover {
+  border-color: var(--cyan);
+}
+[data-theme="light"] .pricing-note {
+  color: rgba(15, 15, 26, 0.5);
+}
+[data-theme="light"] .pricing-savings-label {
+  color: rgba(15, 15, 26, 0.45);
+}
+[data-theme="light"] .pricing-savings-old {
+  color: rgba(15, 15, 26, 0.35);
+}
+[data-theme="light"] .pricing-savings-tag {
+  color: #0891B2;
+}
+[data-theme="light"] .pricing-x path {
+  stroke: rgba(15, 15, 26, 0.2);
+}
+
+/* ---- CLIENTS PAGE ---- */
+[data-theme="light"] .client-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* ---- CONTACT PAGE ---- */
+[data-theme="light"] .contact-cta {
+  color: rgba(15, 15, 26, 0.7);
+}
+[data-theme="light"] .contact-card {
+  border-color: rgba(15, 15, 26, 0.08);
+  background: rgba(15, 15, 26, 0.02);
+}
+[data-theme="light"] a.contact-card:hover {
+  border-color: rgba(8, 145, 178, 0.3);
+  background: rgba(8, 145, 178, 0.05);
+}
+[data-theme="light"] .contact-card-icon {
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.18), rgba(124, 58, 237, 0.18));
+}
+[data-theme="light"] .contact-card-value {
+  color: rgba(15, 15, 26, 0.8);
+}
+/* Contact logo swap */
+.contact-logo-light {
+  display: none;
+}
+[data-theme="light"] .contact-logo-dark {
+  display: none;
+}
+[data-theme="light"] .contact-logo-light {
+  display: block;
+}
+[data-theme="light"] .contact-bottom-glow::after {
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.25), rgba(59, 130, 246, 0.3), transparent);
+}
+
+/* ---- FULLSCREEN TOGGLE BUTTON ---- */
+.fullscreen-toggle {
+  position: fixed;
+  top: 20px;
+  right: 80px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.fullscreen-toggle:hover {
+  border-color: var(--cyan);
+  background: rgba(6, 182, 212, 0.1);
+}
+
+@media (max-width: 480px) {
+  .fullscreen-toggle {
+    top: 12px;
+    right: 68px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+[data-theme="light"] .fullscreen-toggle {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+
+[data-theme="light"] .fullscreen-toggle:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--cyan);
+}
+
+/* ---- THEME TOGGLE BUTTON ---- */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--cyan);
+  background: rgba(6, 182, 212, 0.1);
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+[data-theme="light"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--cyan);
+}
+
+/* ---- NAVIGATION CONTROLS (light) ---- */
+[data-theme="light"] .nav-btn {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--cyan);
+}
+[data-theme="light"] .nav-dot {
+  background: rgba(15, 15, 26, 0.15);
+}
+[data-theme="light"] .nav-dot:hover {
+  background: rgba(8, 145, 178, 0.5);
+}
+[data-theme="light"] .nav-dot-active {
+  background: var(--cyan);
+}
+[data-theme="light"] .nav-counter {
+  color: rgba(15, 15, 26, 0.4);
+}
+
+/* ---- EXPORT BUTTON (light) ---- */
+[data-theme="light"] .export-btn {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+[data-theme="light"] .export-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--cyan);
+}
