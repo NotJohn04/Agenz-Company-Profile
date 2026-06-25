@@ -50,25 +50,25 @@ function InfluencerPage() {
           <div className="inf-grid">
             <div className="inf-portfolio-item">
               <div className="inf-img-wrapper">
-                <img src="/assets/influencer-sharonyee.jpeg" alt="Sharonyee_18" className="inf-portfolio-img" />
+                <img src="/assets/influencer-sharonyee.webp" alt="Sharonyee_18" className="inf-portfolio-img" />
               </div>
               <span className="inf-portfolio-label">Sharonyee &mdash; 28K followers</span>
             </div>
             <div className="inf-portfolio-item">
               <div className="inf-img-wrapper">
-                <img src="/assets/influencer-yangyang.jpeg" alt="Yang Yang" className="inf-portfolio-img" />
+                <img src="/assets/influencer-yangyang.webp" alt="Yang Yang" className="inf-portfolio-img" />
               </div>
               <span className="inf-portfolio-label">Yang Yang &mdash; 7K followers</span>
             </div>
             <div className="inf-portfolio-item">
               <div className="inf-img-wrapper">
-                <img src="/assets/influencer-janet.jpeg" alt="J姐姐 Janet" className="inf-portfolio-img" />
+                <img src="/assets/influencer-janet.webp" alt="J姐姐 Janet" className="inf-portfolio-img" />
               </div>
               <span className="inf-portfolio-label">J Janet &mdash; 10K followers</span>
             </div>
             <div className="inf-portfolio-item">
               <div className="inf-img-wrapper">
-                <img src="/assets/influencer-piggy.jpeg" alt="小猪一只" className="inf-portfolio-img" />
+                <img src="/assets/influencer-piggy.webp" alt="小猪一只" className="inf-portfolio-img" />
               </div>
               <span className="inf-portfolio-label">Piggy &mdash; 2.3K followers</span>
             </div>

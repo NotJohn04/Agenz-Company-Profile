@@ -51,13 +51,13 @@ function CrmPage() {
           <div className="crm-row-top">
             <div className="crm-portfolio-item">
               <div className="crm-img-wrapper">
-                <img src="/assets/crm-dashboard1.png" alt="CRM Dashboard - 172 Opportunities, RM318K Value" className="crm-portfolio-img" />
+                <img src="/assets/crm-dashboard1.webp" alt="CRM Dashboard - 172 Opportunities, RM318K Value" className="crm-portfolio-img" />
               </div>
               <span className="crm-portfolio-label">172 Opportunities &mdash; RM 318K Value</span>
             </div>
             <div className="crm-portfolio-item">
               <div className="crm-img-wrapper">
-                <img src="/assets/crm-dashboard2.png" alt="CRM Dashboard - 99 Opportunities, RM15.8K Value" className="crm-portfolio-img" />
+                <img src="/assets/crm-dashboard2.webp" alt="CRM Dashboard - 99 Opportunities, RM15.8K Value" className="crm-portfolio-img" />
               </div>
               <span className="crm-portfolio-label">99 Opportunities &mdash; RM 15.8K Value</span>
             </div>
@@ -65,7 +65,7 @@ function CrmPage() {
           <div className="crm-row-bottom">
             <div className="crm-portfolio-item">
               <div className="crm-img-wrapper">
-                <img src="/assets/crm-dashboard3.png" alt="CRM Dashboard - 123 Opportunities, RM15K Value" className="crm-portfolio-img" />
+                <img src="/assets/crm-dashboard3.webp" alt="CRM Dashboard - 123 Opportunities, RM15K Value" className="crm-portfolio-img" />
               </div>
               <span className="crm-portfolio-label">123 Opportunities &mdash; RM 15K Value</span>
             </div>

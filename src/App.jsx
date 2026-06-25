@@ -22,6 +22,7 @@ import MetricsPage from './pages/MetricsPage'
 import ClientsPage from './pages/ClientsPage'
 import ContactPage from './pages/ContactPage'
 import { otherServices } from './data/companyData'
+import { imageAssets } from './data/assetManifest'
 import { exportPdf } from './utils/exportPdf'
 import './App.css'
 import './theme-light.css'
@@ -55,6 +56,28 @@ function App() {
   const [scale, setScale] = useState(1)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const touchStartRef = useRef(null)
+
+  // Warm the image cache in the background after first paint, so slides
+  // appear instantly when navigating — even on slow connections.
+  useEffect(() => {
+    let cancelled = false
+    const cache = []
+    const preloadAll = () => {
+      imageAssets.forEach((src) => {
+        if (cancelled) return
+        const img = new Image()
+        img.decoding = 'async'
+        img.src = src
+        cache.push(img)
+      })
+    }
+    const idle = window.requestIdleCallback || ((fn) => setTimeout(fn, 600))
+    const handle = idle(preloadAll)
+    return () => {
+      cancelled = true
+      if (window.cancelIdleCallback) window.cancelIdleCallback(handle)
+    }
+  }, [])
 
   // Compute scale factor
   useEffect(() => {

@@ -49,25 +49,25 @@ function AiVideosPage() {
         <div className="aiv-portfolio">
           <div className="aiv-row-top">
             <div className="aiv-portfolio-item">
-              <img src="/assets/ai-video-ugc1.jpg" alt="AI UGC Creator" className="aiv-portfolio-img" />
+              <img src="/assets/ai-video-ugc1.webp" alt="AI UGC Creator" className="aiv-portfolio-img" />
               <span className="aiv-portfolio-label">AI UGC Creator</span>
             </div>
             <div className="aiv-portfolio-item">
-              <img src="/assets/ai-video-ugc2.jpg" alt="AI UGC Creator" className="aiv-portfolio-img" />
+              <img src="/assets/ai-video-ugc2.webp" alt="AI UGC Creator" className="aiv-portfolio-img" />
               <span className="aiv-portfolio-label">AI UGC Creator</span>
             </div>
             <div className="aiv-portfolio-item">
-              <img src="/assets/ai-video-ugc3.jpg" alt="AI UGC Creator" className="aiv-portfolio-img" />
+              <img src="/assets/ai-video-ugc3.webp" alt="AI UGC Creator" className="aiv-portfolio-img" />
               <span className="aiv-portfolio-label">AI UGC Creator</span>
             </div>
           </div>
           <div className="aiv-row-bottom">
             <div className="aiv-portfolio-item">
-              <img src="/assets/ai-video-drone.jpg" alt="AI Drone Shots" className="aiv-portfolio-img" />
+              <img src="/assets/ai-video-drone.webp" alt="AI Drone Shots" className="aiv-portfolio-img" />
               <span className="aiv-portfolio-label">AI Drone Shots</span>
             </div>
             <div className="aiv-portfolio-item">
-              <img src="/assets/ai-video-cinematic.jpg" alt="Cinematic AI Video" className="aiv-portfolio-img" />
+              <img src="/assets/ai-video-cinematic.webp" alt="Cinematic AI Video" className="aiv-portfolio-img" />
               <span className="aiv-portfolio-label">Cinematic AI Video</span>
             </div>
           </div>

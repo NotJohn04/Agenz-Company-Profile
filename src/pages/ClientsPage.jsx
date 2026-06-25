@@ -2,22 +2,22 @@ import PageHeader from '../components/PageHeader'
 import './ClientsPage.css'
 
 const clients = [
-  { name: 'Amsolar', logo: '/assets/client-amsolar.png' },
-  { name: 'K-Structures', logo: '/assets/client-kstructures.png' },
-  { name: 'Assign Solar', logo: '/assets/client-assign-solar.png' },
-  { name: 'Solar Sunyield', logo: '/assets/client-sunyield.png' },
-  { name: 'IJR Venture', logo: '/assets/client-ijr.png' },
-  { name: 'Geosav', logo: '/assets/client-geosav.png' },
-  { name: 'Elevated Studios', logo: '/assets/client-elevated.png' },
-  { name: 'DE Solar', logo: '/assets/client-desolar.png' },
-  { name: 'Vantage Steel Works', logo: '/assets/client-vantage.png' },
-  { name: 'Solarock', logo: '/assets/client-solarock.png' },
-  { name: 'True BioScience', logo: '/assets/client-bioscience.png' },
-  { name: 'AD Power', logo: '/assets/client-adpower.png' },
-  { name: 'RGS Ray Go Solar', logo: '/assets/client-rgs.png' },
-  { name: 'Macglo', logo: '/assets/client-macglo.png' },
-  { name: 'Twenty3 Florist', logo: '/assets/client-twentythree.png' },
-  { name: 'Redbrand', logo: '/assets/client-redbrand.png' },
+  { name: 'Amsolar', logo: '/assets/client-amsolar.webp' },
+  { name: 'K-Structures', logo: '/assets/client-kstructures.webp' },
+  { name: 'Assign Solar', logo: '/assets/client-assign-solar.webp' },
+  { name: 'Solar Sunyield', logo: '/assets/client-sunyield.webp' },
+  { name: 'IJR Venture', logo: '/assets/client-ijr.webp' },
+  { name: 'Geosav', logo: '/assets/client-geosav.webp' },
+  { name: 'Elevated Studios', logo: '/assets/client-elevated.webp' },
+  { name: 'DE Solar', logo: '/assets/client-desolar.webp' },
+  { name: 'Vantage Steel Works', logo: '/assets/client-vantage.webp' },
+  { name: 'Solarock', logo: '/assets/client-solarock.webp' },
+  { name: 'True BioScience', logo: '/assets/client-bioscience.webp' },
+  { name: 'AD Power', logo: '/assets/client-adpower.webp' },
+  { name: 'RGS Ray Go Solar', logo: '/assets/client-rgs.webp' },
+  { name: 'Macglo', logo: '/assets/client-macglo.webp' },
+  { name: 'Twenty3 Florist', logo: '/assets/client-twentythree.webp' },
+  { name: 'Redbrand', logo: '/assets/client-redbrand.webp' },
 ]
 
 function ClientsPage() {

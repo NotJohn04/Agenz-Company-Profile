@@ -48,11 +48,11 @@ function AiCreativesPage() {
         {/* Right - portfolio showcase */}
         <div className="aic-portfolio">
           <div className="aic-portfolio-item">
-            <img src="/assets/portfolio-solar.png" alt="Solar Sunyield - AI Creatives" className="aic-portfolio-img" />
+            <img src="/assets/portfolio-solar.webp" alt="Solar Sunyield - AI Creatives" className="aic-portfolio-img" />
             <span className="aic-portfolio-label">Solar Sunyield &mdash; CNY Campaign</span>
           </div>
           <div className="aic-portfolio-item">
-            <img src="/assets/portfolio-florist.png" alt="TwentyThree Florist - AI Creatives" className="aic-portfolio-img" />
+            <img src="/assets/portfolio-florist.webp" alt="TwentyThree Florist - AI Creatives" className="aic-portfolio-img" />
             <span className="aic-portfolio-label">TwentyThree Florist &mdash; Valentine's Day</span>
           </div>
         </div>

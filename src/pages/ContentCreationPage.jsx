@@ -49,11 +49,11 @@ function ContentCreationPage() {
         <div className="cc-portfolio">
           <div className="cc-grid">
             <div className="cc-portfolio-item">
-              <img src="/assets/content-product.jpg" alt="Product Photography" className="cc-portfolio-img" />
+              <img src="/assets/content-product.webp" alt="Product Photography" className="cc-portfolio-img" />
               <span className="cc-portfolio-label">Product Photography</span>
             </div>
             <div className="cc-portfolio-item">
-              <img src="/assets/content-styling.jpeg" alt="Product Styling" className="cc-portfolio-img" />
+              <img src="/assets/content-styling.webp" alt="Product Styling" className="cc-portfolio-img" />
               <span className="cc-portfolio-label">Product Styling</span>
             </div>
             <div className="cc-portfolio-item">

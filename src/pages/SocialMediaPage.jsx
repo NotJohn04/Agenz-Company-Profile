@@ -48,16 +48,16 @@ function SocialMediaPage() {
         {/* Right - portfolio showcase */}
         <div className="smm-portfolio">
           <div className="smm-portfolio-item">
-            <img src="/assets/smm-planner.png" alt="Content Planner" className="smm-portfolio-img smm-img-wide" />
+            <img src="/assets/smm-planner.webp" alt="Content Planner" className="smm-portfolio-img smm-img-wide" />
             <span className="smm-portfolio-label">Weekly Content Planner</span>
           </div>
           <div className="smm-row-bottom">
             <div className="smm-portfolio-item">
-              <img src="/assets/smm-calendar.png" alt="Content Calendar" className="smm-portfolio-img smm-img-half" />
+              <img src="/assets/smm-calendar.webp" alt="Content Calendar" className="smm-portfolio-img smm-img-half" />
               <span className="smm-portfolio-label">Scheduling Calendar</span>
             </div>
             <div className="smm-portfolio-item">
-              <img src="/assets/smm-accounts.png" alt="Managed Accounts" className="smm-portfolio-img smm-img-half" />
+              <img src="/assets/smm-accounts.webp" alt="Managed Accounts" className="smm-portfolio-img smm-img-half" />
               <span className="smm-portfolio-label">10+ Managed Accounts</span>
             </div>
           </div>

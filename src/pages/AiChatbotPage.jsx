@@ -50,13 +50,13 @@ function AiChatbotPage() {
           <div className="acb-row-top">
             <div className="acb-portfolio-item">
               <div className="acb-img-wrapper">
-                <img src="/assets/chatbot-reply.png" alt="AI replying to customer" className="acb-portfolio-img" />
+                <img src="/assets/chatbot-reply.webp" alt="AI replying to customer" className="acb-portfolio-img" />
               </div>
               <span className="acb-portfolio-label">AI replies instantly</span>
             </div>
             <div className="acb-portfolio-item">
               <div className="acb-img-wrapper">
-                <img src="/assets/chatbot-ocr.png" alt="AI reading document with OCR" className="acb-portfolio-img" />
+                <img src="/assets/chatbot-ocr.webp" alt="AI reading document with OCR" className="acb-portfolio-img" />
               </div>
               <span className="acb-portfolio-label">OCR reads uploaded images</span>
             </div>
@@ -64,7 +64,7 @@ function AiChatbotPage() {
           <div className="acb-row-bottom">
             <div className="acb-portfolio-item">
               <div className="acb-img-wrapper">
-                <img src="/assets/chatbot-quote.png" alt="AI generating quotation" className="acb-portfolio-img" />
+                <img src="/assets/chatbot-quote.webp" alt="AI generating quotation" className="acb-portfolio-img" />
               </div>
               <span className="acb-portfolio-label">Auto-generates quotations</span>
             </div>

@@ -50,27 +50,27 @@ function DigitalAdvertisingPage() {
           <p className="da-results-title">Real Campaign Results</p>
           <div className="da-results-stack">
             <div className="da-result-item">
-              <img src="/assets/ads-ijr-leads.png" alt="IJR Lead Campaign" className="da-result-img" />
+              <img src="/assets/ads-ijr-leads.webp" alt="IJR Lead Campaign" className="da-result-img" />
               <span className="da-result-label">IJR &mdash; 86 Leads at RM 11.07/lead</span>
             </div>
             <div className="da-result-item">
-              <img src="/assets/ads-kstructure-cny.png" alt="K Structure CNY Ads" className="da-result-img" />
+              <img src="/assets/ads-kstructure-cny.webp" alt="K Structure CNY Ads" className="da-result-img" />
               <span className="da-result-label">K Structure CNY &mdash; 117 Leads at RM 7.92/lead</span>
             </div>
             <div className="da-result-item">
-              <img src="/assets/ads-sunyield.png" alt="Sunyield Trial Campaign" className="da-result-img" />
+              <img src="/assets/ads-sunyield.webp" alt="Sunyield Trial Campaign" className="da-result-img" />
               <span className="da-result-label">Sunyield &mdash; 106 Leads at RM 8.73/lead</span>
             </div>
             <div className="da-result-item">
-              <img src="/assets/ads-assign-group.png" alt="Assign Group Campaign" className="da-result-img" />
+              <img src="/assets/ads-assign-group.webp" alt="Assign Group Campaign" className="da-result-img" />
               <span className="da-result-label">Assign Group &mdash; 101 Leads at RM 9.16/lead</span>
             </div>
             <div className="da-result-item">
-              <img src="/assets/ads-kstructure-dec.png" alt="K Structure December" className="da-result-img" />
+              <img src="/assets/ads-kstructure-dec.webp" alt="K Structure December" className="da-result-img" />
               <span className="da-result-label">K Structure Dec &mdash; 91 Leads at RM 10.18/lead</span>
             </div>
             <div className="da-result-item">
-              <img src="/assets/ads-amsolar.png" alt="Amsolar Campaign" className="da-result-img" />
+              <img src="/assets/ads-amsolar.webp" alt="Amsolar Campaign" className="da-result-img" />
               <span className="da-result-label">Amsolar &mdash; 203 Submissions at RM 11.49/app</span>
             </div>
           </div>

@@ -50,13 +50,13 @@ function LandingPagesPage() {
           <div className="lp-portfolio-stack">
             <div className="lp-portfolio-item">
               <div className="lp-img-wrapper">
-                <img src="/assets/landing-amsolar.png" alt="Amsolar Landing Page" className="lp-portfolio-img" />
+                <img src="/assets/landing-amsolar.webp" alt="Amsolar Landing Page" className="lp-portfolio-img" />
               </div>
               <span className="lp-portfolio-label">Amsolar &mdash; Solar Lead Page</span>
             </div>
             <div className="lp-portfolio-item">
               <div className="lp-img-wrapper">
-                <img src="/assets/landing-kstructures.png" alt="K-Structures Landing Page" className="lp-portfolio-img" />
+                <img src="/assets/landing-kstructures.webp" alt="K-Structures Landing Page" className="lp-portfolio-img" />
               </div>
               <span className="lp-portfolio-label">K-Structures &mdash; Solar Lead Page</span>
             </div>

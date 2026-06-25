@@ -50,25 +50,25 @@ function WebDesignPage() {
           <div className="wd-grid">
             <div className="wd-portfolio-item">
               <div className="wd-img-wrapper">
-                <img src="/assets/web-kstructures.png" alt="K-Structures Website" className="wd-portfolio-img" />
+                <img src="/assets/web-kstructures.webp" alt="K-Structures Website" className="wd-portfolio-img" />
               </div>
               <span className="wd-portfolio-label">K-Structures</span>
             </div>
             <div className="wd-portfolio-item">
               <div className="wd-img-wrapper">
-                <img src="/assets/web-branding.png" alt="Personal Branding Website" className="wd-portfolio-img" />
+                <img src="/assets/web-branding.webp" alt="Personal Branding Website" className="wd-portfolio-img" />
               </div>
               <span className="wd-portfolio-label">Personal Branding</span>
             </div>
             <div className="wd-portfolio-item">
               <div className="wd-img-wrapper">
-                <img src="/assets/web-fitness.png" alt="Fitness Coach Website" className="wd-portfolio-img" />
+                <img src="/assets/web-fitness.webp" alt="Fitness Coach Website" className="wd-portfolio-img" />
               </div>
               <span className="wd-portfolio-label">Fitness Coach</span>
             </div>
             <div className="wd-portfolio-item">
               <div className="wd-img-wrapper">
-                <img src="/assets/web-performance.png" alt="Peak Performance Website" className="wd-portfolio-img" />
+                <img src="/assets/web-performance.webp" alt="Peak Performance Website" className="wd-portfolio-img" />
               </div>
               <span className="wd-portfolio-label">Peak Performance</span>
             </div>
