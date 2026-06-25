@@ -23,7 +23,6 @@ import ClientsPage from './pages/ClientsPage'
 import ContactPage from './pages/ContactPage'
 import { otherServices } from './data/companyData'
 import { imageAssets } from './data/assetManifest'
-import { exportPdf } from './utils/exportPdf'
 import './App.css'
 import './theme-light.css'
 import './animations.css'
@@ -52,10 +51,11 @@ const PAGES = [
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0)
-  const [theme] = useState('dark')
   const [scale, setScale] = useState(1)
   const [isFullscreen, setIsFullscreen] = useState(false)
+  const [exporting, setExporting] = useState(false)
   const touchStartRef = useRef(null)
+  const exportRef = useRef(null)
 
   // Warm the image cache in the background after first paint, so slides
   // appear instantly when navigating — even on slow connections.
@@ -177,10 +177,24 @@ function App() {
     return () => document.removeEventListener('fullscreenchange', onFsChange)
   }, [])
 
-  // PDF export handler
-  const handleExport = useCallback(() => {
-    exportPdf(theme)
-  }, [theme])
+  // PDF export — generated on demand from the live slides (nothing is
+  // fetched until the user actually clicks download).
+  const handleExport = useCallback(async () => {
+    if (exporting) return
+    setExporting(true)
+    try {
+      // Lazy-load the (heavy) PDF libraries only on click, so they never
+      // weigh down the initial page load.
+      const { exportPdf } = await import('./utils/exportPdf')
+      // let the offscreen export root mount + lay out
+      await new Promise((r) => setTimeout(r, 80))
+      await exportPdf(exportRef.current)
+    } catch (err) {
+      console.error('PDF export failed', err)
+    } finally {
+      setExporting(false)
+    }
+  }, [exporting])
 
   const CurrentPageComponent = PAGES[currentPage]
 
@@ -200,6 +214,19 @@ function App() {
           </div>
         </SlideLayout>
       </div>
+
+      {/* Offscreen export root — mounted only while generating the PDF */}
+      {exporting && (
+        <div className="pdf-export-root" ref={exportRef} aria-hidden="true">
+          {PAGES.map((Page, i) => (
+            <div className="pdf-slide" key={i}>
+              <SlideLayout>
+                <Page />
+              </SlideLayout>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Fullscreen toggle */}
       <button className="fullscreen-toggle" onClick={toggleFullscreen} aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'} title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}>
@@ -222,7 +249,7 @@ function App() {
       </a>
 
       {/* Export button */}
-      <ExportButton onClick={handleExport} />
+      <ExportButton onClick={handleExport} loading={exporting} />
 
       {/* Navigation controls */}
       <NavigationControls

@@ -12,7 +12,7 @@ function CoverPage() {
       </div>
 
       {/* Monkey mark */}
-      <img src="/assets/agenz-monkey.png" alt="Agenz" className="cover-mark" />
+      <img src="/assets/agenz-monkey.png" alt="Agenz" className="cover-mark" fetchpriority="high" decoding="async" />
 
       {/* Wordmark */}
       <h1 className="cover-wordmark">AGENZ</h1>

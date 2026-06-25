@@ -51,6 +51,24 @@
 }
 
 /* ============================================
+   PDF EXPORT ROOT — offscreen, full-scale slides
+   ============================================ */
+.pdf-export-root {
+  position: fixed;
+  left: -100000px;
+  top: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.pdf-slide {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============================================
    GLOBAL EDITORIAL TYPOGRAPHY (V4.0)
    Loud condensed display + serif accents + mono labels
    ============================================ */
