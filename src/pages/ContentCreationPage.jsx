@@ -16,10 +16,6 @@ function ContentCreationPage() {
             that tells your brand story and drives real engagement.
           </p>
 
-          <div className="cc-price-block">
-            <span className="cc-price">RM 1,288</span>
-            <span className="cc-price-unit">/project</span>
-          </div>
 
           <ul className="cc-features">
             <li className="cc-feature">

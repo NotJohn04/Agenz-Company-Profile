@@ -16,10 +16,6 @@ function InfluencerPage() {
             and real results from audiences that trust them.
           </p>
 
-          <div className="inf-price-block">
-            <span className="inf-price">RM 799</span>
-            <span className="inf-price-unit">/campaign</span>
-          </div>
 
           <ul className="inf-features">
             <li className="inf-feature">

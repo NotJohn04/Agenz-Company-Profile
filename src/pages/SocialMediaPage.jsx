@@ -16,10 +16,6 @@ function SocialMediaPage() {
             about what to post again.
           </p>
 
-          <div className="smm-price-block">
-            <span className="smm-price">RM 888</span>
-            <span className="smm-price-unit">/month</span>
-          </div>
 
           <ul className="smm-features">
             <li className="smm-feature">

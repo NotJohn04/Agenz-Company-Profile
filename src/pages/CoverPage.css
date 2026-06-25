@@ -35,32 +35,33 @@
 
 /* Monkey mark */
 .cover-mark {
-  width: 150px;
+  width: 230px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 6px;
+  margin-bottom: 28px;
 }
 
 /* Wordmark */
 .cover-wordmark {
   font-family: var(--font-display);
-  font-size: 280px;
+  font-size: 232px;
   font-weight: 400;
-  line-height: 0.86;
-  letter-spacing: 4px;
+  line-height: 1;
+  letter-spacing: 8px;
   color: var(--charcoal);
   text-transform: uppercase;
+  padding: 0 0 0 8px; /* balance Anton side bearing + letter-spacing */
 }
 
 /* Serif tagline */
 .cover-tagline {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 400;
   color: var(--asphalt);
   letter-spacing: 0.5px;
-  margin-top: 14px;
+  margin-top: 28px;
 }
 
 /* Services line */
@@ -84,27 +85,3 @@
   text-transform: uppercase;
 }
 
-/* Footer */
-.cover-footer {
-  position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-.cover-footer-label {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 4px;
-  color: var(--dust);
-}
-.cover-footer-name {
-  font-family: var(--font-body);
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--charcoal);
-}

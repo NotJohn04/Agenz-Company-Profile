@@ -16,10 +16,6 @@ function LandingPagesPage() {
             mobile-first experiences.
           </p>
 
-          <div className="lp-price-block">
-            <span className="lp-price">RM 1,367</span>
-            <span className="lp-price-unit">/page</span>
-          </div>
 
           <ul className="lp-features">
             <li className="lp-feature">

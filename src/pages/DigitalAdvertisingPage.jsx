@@ -16,10 +16,6 @@ function DigitalAdvertisingPage() {
             everything and deliver measurable results.
           </p>
 
-          <div className="da-price-block">
-            <span className="da-price">RM 588</span>
-            <span className="da-price-unit">/month</span>
-          </div>
 
           <ul className="da-features">
             <li className="da-feature">

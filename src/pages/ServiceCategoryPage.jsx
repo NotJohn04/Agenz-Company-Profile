@@ -11,10 +11,6 @@ function ServiceCategoryPage({ title, services }) {
           <div key={svc.title} className="svc-detail-card">
             <div className="svc-detail-header">
               <h3 className="svc-detail-title">{svc.title}</h3>
-              <div className="svc-detail-price-row">
-                <span className="svc-detail-price">{svc.price}</span>
-                {svc.priceUnit && <span className="svc-detail-unit">{svc.priceUnit}</span>}
-              </div>
             </div>
             <p className="svc-detail-tagline">{svc.tagline}</p>
             <p className="svc-detail-desc">{svc.description}</p>

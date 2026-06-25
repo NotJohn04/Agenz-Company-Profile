@@ -16,10 +16,6 @@ function CrmPage() {
             no opportunity slips through the cracks.
           </p>
 
-          <div className="crm-price-block">
-            <span className="crm-price">RM 888</span>
-            <span className="crm-price-unit">/setup</span>
-          </div>
 
           <ul className="crm-features">
             <li className="crm-feature">

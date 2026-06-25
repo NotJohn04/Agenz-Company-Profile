@@ -16,10 +16,6 @@ function WebDesignPage() {
             to scale your business.
           </p>
 
-          <div className="wd-price-block">
-            <span className="wd-price">RM 2,676</span>
-            <span className="wd-price-unit">/website</span>
-          </div>
 
           <ul className="wd-features">
             <li className="wd-feature">

@@ -16,10 +16,6 @@ function AiChatbotPage() {
             so your team never misses a lead.
           </p>
 
-          <div className="acb-price-block">
-            <span className="acb-price">RM 888</span>
-            <span className="acb-price-unit">/setup</span>
-          </div>
 
           <ul className="acb-features">
             <li className="acb-feature">

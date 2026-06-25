@@ -16,10 +16,6 @@ function AiVideosPage() {
             video content that looks like it cost six figures, but didn&rsquo;t.
           </p>
 
-          <div className="aiv-price-block">
-            <span className="aiv-price">RM 488</span>
-            <span className="aiv-price-unit">/video</span>
-          </div>
 
           <ul className="aiv-features">
             <li className="aiv-feature">

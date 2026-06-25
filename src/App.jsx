@@ -19,7 +19,6 @@ import AiChatbotPage from './pages/AiChatbotPage'
 import InfluencerPage from './pages/InfluencerPage'
 import ProcessPage from './pages/ProcessPage'
 import MetricsPage from './pages/MetricsPage'
-import PricingPage from './pages/PricingPage'
 import ClientsPage from './pages/ClientsPage'
 import ContactPage from './pages/ContactPage'
 import { otherServices } from './data/companyData'
@@ -46,7 +45,6 @@ const PAGES = [
   () => <ServiceCategoryPage title="Other Services" services={otherServices} />,
   () => <ProcessPage />,
   () => <MetricsPage />,
-  () => <PricingPage />,
   () => <ClientsPage />,
   () => <ContactPage />,
 ]

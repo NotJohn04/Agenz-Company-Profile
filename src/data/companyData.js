@@ -30,9 +30,8 @@ export const tableOfContents = [
   { number: '13', title: 'Other Services' },
   { number: '14', title: 'How We Work' },
   { number: '15', title: 'Key Results' },
-  { number: '16', title: 'Pricing Plans' },
-  { number: '17', title: 'Our Clients' },
-  { number: '18', title: 'Contact Us' },
+  { number: '16', title: 'Our Clients' },
+  { number: '17', title: 'Contact Us' },
 ];
 
 export const aboutData = {

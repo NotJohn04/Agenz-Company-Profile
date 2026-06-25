@@ -26,12 +26,6 @@ function CoverPage() {
         <span className="cover-services-text">{companyInfo.services}</span>
         <span className="cover-services-line"></span>
       </div>
-
-      {/* Footer marker */}
-      <div className="cover-footer">
-        <span className="cover-footer-label">PRESENTED BY</span>
-        <span className="cover-footer-name">{companyInfo.name.toUpperCase()}</span>
-      </div>
     </div>
   )
 }

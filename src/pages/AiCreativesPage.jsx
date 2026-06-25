@@ -16,10 +16,6 @@ function AiCreativesPage() {
             Our team creates everything and serves it to you red carpet style.
           </p>
 
-          <div className="aic-price-block">
-            <span className="aic-price">RM 688</span>
-            <span className="aic-price-unit">/batch</span>
-          </div>
 
           <ul className="aic-features">
             <li className="aic-feature">
