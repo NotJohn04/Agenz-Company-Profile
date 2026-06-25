@@ -49,3 +49,48 @@
 .ios-fullscreen .nav-controls {
   bottom: 8px;
 }
+
+/* ============================================
+   GLOBAL EDITORIAL TYPOGRAPHY (V4.0)
+   Loud condensed display + serif accents + mono labels
+   ============================================ */
+
+/* Loud display — section titles & big numbers */
+[class$="-title"],
+[class$="-price"],
+[class$="-value"],
+.pricing-tier,
+.pricing-price,
+.cover-presented-name {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.5px !important;
+  -webkit-text-fill-color: currentColor;
+  background: none !important;
+  color: var(--charcoal);
+}
+
+/* Serif accent — taglines / emphasis lines */
+[class$="-tagline"],
+.svc-detail-tagline,
+.pricing-guarantee-tag {
+  font-family: var(--font-serif) !important;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--asphalt);
+  letter-spacing: 0.3px;
+}
+
+/* Mono — small labels, units, eyebrows, counters, section indexes */
+[class$="-unit"],
+[class$="-label"],
+[class$="-eyebrow"],
+.toc-number,
+.process-step-number,
+.svc-detail-unit {
+  font-family: var(--font-mono) !important;
+  letter-spacing: 1.5px;
+}
+
+/* Keep denim accents from reading as "links" — soften to charcoal ink */
+::selection { background: var(--beige); color: var(--charcoal); }

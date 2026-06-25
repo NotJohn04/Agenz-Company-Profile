@@ -1,5 +1,5 @@
 /* ============================================
-   COVER PAGE (Page 0)
+   COVER PAGE — Editorial typographic cover
    ============================================ */
 
 .cover-page {
@@ -9,145 +9,102 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
 }
 
-/* Top Bar */
-.cover-top-bar {
-  position: absolute;
-  top: 48px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Eyebrow */
+.cover-eyebrow {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
+  margin-bottom: 26px;
 }
-
-.cover-top-bar-line {
-  width: 200px;
+.cover-eyebrow-rule {
+  width: 64px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.5), transparent);
+  background: var(--charcoal);
+  opacity: 0.4;
 }
-
-.cover-top-bar-text {
-  font-family: 'Poppins', sans-serif;
+.cover-eyebrow-text {
+  font-family: var(--font-mono);
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 4px;
-  color: rgba(6, 182, 212, 0.7);
+  letter-spacing: 5px;
+  color: var(--asphalt);
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
-/* Logo */
-.cover-logo-section {
-  margin: 0;
-  padding: 0;
-}
-
-.cover-logo-image {
-  width: 500px;
+/* Monkey mark */
+.cover-mark {
+  width: 150px;
   height: auto;
   object-fit: contain;
-  display: block;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 6px;
 }
 
-/* Tagline */
-.cover-tagline {
-  font-family: 'Poppins', sans-serif;
-  font-size: 34px;
+/* Wordmark */
+.cover-wordmark {
+  font-family: var(--font-display);
+  font-size: 280px;
   font-weight: 400;
-  color: rgba(245, 245, 245, 0.7);
-  letter-spacing: 1.5px;
-  margin-bottom: 44px;
+  line-height: 0.86;
+  letter-spacing: 4px;
+  color: var(--charcoal);
+  text-transform: uppercase;
 }
 
-/* Divider */
-.cover-divider {
+/* Serif tagline */
+.cover-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 44px;
+  font-weight: 400;
+  color: var(--asphalt);
+  letter-spacing: 0.5px;
+  margin-top: 14px;
+}
+
+/* Services line */
+.cover-services {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 36px;
+  gap: 22px;
+  margin-top: 40px;
 }
-
-.cover-divider-line {
-  width: 180px;
+.cover-services-line {
+  width: 80px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), rgba(139, 92, 246, 0.4), transparent);
+  background: var(--dust);
 }
-
-.cover-divider-diamond {
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(135deg, var(--cyan), var(--purple));
-  transform: rotate(45deg);
-  box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
-}
-
-/* Subtitle */
-.cover-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: rgba(245, 245, 245, 0.5);
+.cover-services-text {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 400;
   letter-spacing: 3px;
+  color: var(--asphalt);
   text-transform: uppercase;
-  margin-bottom: 60px;
 }
 
-/* Presented By */
-.cover-presented-by {
+/* Footer */
+.cover-footer {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
-
-.cover-presented-label {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245, 245, 245, 0.35);
+.cover-footer-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: var(--dust);
 }
-
-.cover-presented-name {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
+.cover-footer-name {
+  font-family: var(--font-body);
+  font-size: 22px;
   font-weight: 600;
-  letter-spacing: 1.5px;
-  background: linear-gradient(135deg, var(--cyan) 0%, var(--blue) 50%, var(--purple) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Bottom Bar */
-.cover-bottom-bar {
-  position: absolute;
-  bottom: 48px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  height: 2px;
-}
-
-.cover-bottom-bar-glow {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), var(--blue), transparent);
-  border-radius: 2px;
-  position: relative;
-}
-
-.cover-bottom-bar-glow::after {
-  content: '';
-  position: absolute;
-  inset: -4px 0;
-  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3), transparent);
-  filter: blur(8px);
-  border-radius: 4px;
+  letter-spacing: 2px;
+  color: var(--charcoal);
 }

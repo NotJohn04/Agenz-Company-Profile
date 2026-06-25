@@ -53,7 +53,7 @@ const PAGES = [
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0)
-  const [theme, setTheme] = useState('dark')
+  const [theme] = useState('dark')
   const [scale, setScale] = useState(1)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const touchStartRef = useRef(null)
@@ -67,14 +67,6 @@ function App() {
     updateScale()
     window.addEventListener('resize', updateScale)
     return () => window.removeEventListener('resize', updateScale)
-  }, [])
-
-  const toggleTheme = useCallback(() => {
-    setTheme((prev) => {
-      const next = prev === 'dark' ? 'light' : 'dark'
-      document.documentElement.setAttribute('data-theme', next)
-      return next
-    })
   }, [])
 
   const goNext = useCallback(() => {
@@ -98,12 +90,6 @@ function App() {
       } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
         e.preventDefault()
         goPrev()
-      } else if (e.key === '1') {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        setTheme('dark')
-      } else if (e.key === '2') {
-        document.documentElement.setAttribute('data-theme', 'light')
-        setTheme('light')
       }
     }
     window.addEventListener('keydown', handleKeyDown)
@@ -203,20 +189,6 @@ function App() {
         ) : (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M8 3H5a2 2 0 00-2 2v3M21 8V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3M16 21h3a2 2 0 002-2v-3"/>
-          </svg>
-        )}
-      </button>
-
-      {/* Theme toggle */}
-      <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-        {theme === 'dark' ? (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="12" cy="12" r="5"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" strokeLinecap="round"/>
-          </svg>
-        ) : (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         )}
       </button>

@@ -1,12 +1,34 @@
 /* ============================================
-   CSS VARIABLES - Brand tokens
+   AGENZ V4.0 — Editorial design tokens
+   "Contemporary Youth Editorial Realism"
    ============================================ */
 :root {
-  --cyan: #06B6D4;
-  --blue: #3B82F6;
-  --purple: #8B5CF6;
-  --text: #F5F5F5;
-  --bg: #000000;
+  /* Primary editorial palette */
+  --ivory: #F4F1EB;
+  --paper: #EAE4DA;
+  --dust: #A8A39B;
+  --charcoal: #2C2B2A;
+  --asphalt: #4B4946;
+  --sky: #AFC7E9;
+  --denim: #6D7D95;
+  --beige: #DCC4A3;
+  --tan: #B8946A;
+
+  /* Type system */
+  --font-display: 'Anton', 'Geist', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Geist', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* Legacy accent aliases — remapped to brand neutrals so existing
+     components shift palette without per-file edits */
+  --cyan: #6D7D95;   /* faded denim — primary accent */
+  --blue: #7C8AA0;   /* muted denim */
+  --purple: #B8946A; /* warm tan */
+
+  /* Semantic */
+  --text: #2C2B2A;
+  --bg: #F4F1EB;
 }
 
 * {
@@ -22,9 +44,11 @@ html, body {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--bg);
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   transition: background-color 0.3s, color 0.3s;
 }
 
