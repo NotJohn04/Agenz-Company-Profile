@@ -40,7 +40,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 22px;
   font-weight: 400;
-  color: rgba(44, 43, 42, 0.55);
+  color: rgba(17, 20, 24, 0.55);
   line-height: 1.7;
 }
 
@@ -65,7 +65,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  color: rgba(44, 43, 42, 0.4);
+  color: rgba(17, 20, 24, 0.4);
 }
 
 .aic-features {
@@ -81,7 +81,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: rgba(44, 43, 42, 0.6);
+  color: rgba(17, 20, 24, 0.6);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -115,7 +115,7 @@
   max-width: 640px;
   max-height: 310px;
   border-radius: 10px;
-  border: 1px solid rgba(109, 125, 149, 0.12);
+  border: 1px solid rgba(88, 104, 115, 0.12);
   object-fit: contain;
 }
 
@@ -123,7 +123,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 17px;
   font-weight: 500;
-  color: rgba(44, 43, 42, 0.45);
+  color: rgba(17, 20, 24, 0.45);
   letter-spacing: 1px;
   text-align: center;
 }

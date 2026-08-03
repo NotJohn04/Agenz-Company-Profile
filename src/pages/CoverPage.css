@@ -1,5 +1,5 @@
 /* ============================================
-   COVER PAGE — Editorial typographic cover
+   COVER PAGE — Modern-SaaS hero
    ============================================ */
 
 .cover-page {
@@ -9,79 +9,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-/* Eyebrow */
 .cover-eyebrow {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 22px;
-  margin-bottom: 26px;
-}
-.cover-eyebrow-rule {
-  width: 64px;
-  height: 1px;
-  background: var(--charcoal);
-  opacity: 0.4;
-}
-.cover-eyebrow-text {
-  font-family: var(--font-mono);
+  gap: 12px;
+  font-family: var(--font-body);
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 5px;
-  color: var(--asphalt);
-  text-transform: uppercase;
-}
-
-/* Monkey mark */
-.cover-mark {
-  width: 230px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 28px;
-}
-
-/* Wordmark */
-.cover-wordmark {
-  font-family: var(--font-display);
-  font-size: 232px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 8px;
-  color: var(--charcoal);
-  text-transform: uppercase;
-  padding: 0 0 0 8px; /* balance Anton side bearing + letter-spacing */
-}
-
-/* Serif tagline */
-.cover-tagline {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 42px;
-  font-weight: 400;
-  color: var(--asphalt);
-  letter-spacing: 0.5px;
-  margin-top: 28px;
-}
-
-/* Services line */
-.cover-services {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  margin-top: 40px;
-}
-.cover-services-line {
-  width: 80px;
-  height: 1px;
-  background: var(--dust);
-}
-.cover-services-text {
-  font-family: var(--font-mono);
-  font-size: 17px;
-  font-weight: 400;
   letter-spacing: 3px;
-  color: var(--asphalt);
   text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 30px;
 }
 
+.cover-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.cover-headline {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 132px;
+  line-height: 0.98;
+  letter-spacing: -4px;
+  color: var(--ink);
+}
+
+.cover-headline-accent {
+  background: linear-gradient(100deg, var(--blue), var(--teal) 55%, var(--green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.cover-sub {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.5;
+  color: var(--slate);
+  max-width: 820px;
+  margin-top: 34px;
+}
+
+.cover-cta {
+  margin-top: 48px;
+  padding: 15px 28px;
+  font-size: 17px;
+}

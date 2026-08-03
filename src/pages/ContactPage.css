@@ -21,28 +21,29 @@
 }
 
 .contact-logo {
-  width: 96px;
+  width: 64px;
   height: auto;
   object-fit: contain;
 }
 
 .contact-wordmark {
-  font-family: var(--font-display);
-  font-size: 110px;
-  line-height: 0.9;
-  letter-spacing: 3px;
-  color: var(--charcoal);
-  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+  text-transform: none;
 }
 
 .contact-cta {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 30px;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 27px;
   font-weight: 400;
-  color: var(--asphalt);
+  color: var(--slate);
   text-align: center;
-  max-width: 760px;
+  max-width: 780px;
   line-height: 1.5;
 }
 
@@ -62,7 +63,7 @@
   align-items: center;
   gap: 10px;
   padding: 24px 16px;
-  border: 1px solid rgba(44, 43, 42, 0.12);
+  border: 1px solid rgba(17, 20, 24, 0.12);
   border-radius: 4px;
   background: rgba(234, 228, 218, 0.5);
   transition: all 0.3s ease;
@@ -88,7 +89,7 @@ a.contact-card:hover {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(109, 125, 149, 0.12), rgba(184, 148, 106, 0.12));
+  background: linear-gradient(135deg, rgba(88, 104, 115, 0.12), rgba(88, 104, 115, 0.12));
   color: var(--cyan);
   flex-shrink: 0;
 }
@@ -107,7 +108,7 @@ a.contact-card:hover {
   font-family: 'Geist', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: rgba(44, 43, 42, 0.8);
+  color: rgba(17, 20, 24, 0.8);
   text-align: center;
   line-height: 1.5;
   word-break: break-word;

@@ -4,28 +4,24 @@ import './CoverPage.css'
 function CoverPage() {
   return (
     <div className="cover-page">
-      {/* Eyebrow */}
       <div className="cover-eyebrow">
-        <span className="cover-eyebrow-rule"></span>
-        <span className="cover-eyebrow-text">COMPANY PROFILE — {companyInfo.year}</span>
-        <span className="cover-eyebrow-rule"></span>
+        <span className="cover-dot"></span>
+        COMPANY PROFILE — {companyInfo.year}
       </div>
 
-      {/* Monkey mark */}
-      <img src="/assets/agenz-monkey.png" alt="Agenz" className="cover-mark" fetchpriority="high" decoding="async" />
+      <h1 className="cover-headline">
+        AI-Powered<br />
+        <span className="cover-headline-accent">Customer Acquisition.</span>
+      </h1>
 
-      {/* Wordmark */}
-      <h1 className="cover-wordmark">AGENZ</h1>
+      <p className="cover-sub">
+        {companyInfo.services} — installed into the business you already run.
+      </p>
 
-      {/* Serif tagline accent */}
-      <p className="cover-tagline">{companyInfo.tagline}</p>
-
-      {/* Services line */}
-      <div className="cover-services">
-        <span className="cover-services-line"></span>
-        <span className="cover-services-text">{companyInfo.services}</span>
-        <span className="cover-services-line"></span>
-      </div>
+      <a className="pill-btn cover-cta" href="https://agenz.my" target="_blank" rel="noopener noreferrer">
+        Book a meeting
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
   )
 }

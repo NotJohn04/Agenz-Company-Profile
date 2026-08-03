@@ -41,7 +41,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 21px;
   font-weight: 400;
-  color: rgba(44, 43, 42, 0.55);
+  color: rgba(17, 20, 24, 0.55);
   line-height: 1.7;
 }
 
@@ -66,7 +66,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 22px;
   font-weight: 500;
-  color: rgba(44, 43, 42, 0.4);
+  color: rgba(17, 20, 24, 0.4);
 }
 
 .acb-features {
@@ -82,7 +82,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 19px;
   font-weight: 400;
-  color: rgba(44, 43, 42, 0.6);
+  color: rgba(17, 20, 24, 0.6);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -127,7 +127,7 @@
   width: 330px;
   height: 290px;
   border-radius: 10px;
-  border: 1px solid rgba(109, 125, 149, 0.12);
+  border: 1px solid rgba(88, 104, 115, 0.12);
   overflow: hidden;
 }
 
@@ -135,7 +135,7 @@
   width: 440px;
   height: 290px;
   border-radius: 10px;
-  border: 1px solid rgba(109, 125, 149, 0.12);
+  border: 1px solid rgba(88, 104, 115, 0.12);
   overflow: hidden;
 }
 
@@ -151,7 +151,7 @@
   font-family: 'Geist', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  color: rgba(44, 43, 42, 0.45);
+  color: rgba(17, 20, 24, 0.45);
   letter-spacing: 0.5px;
   text-align: center;
 }

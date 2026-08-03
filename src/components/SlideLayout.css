@@ -1,5 +1,5 @@
 /* ============================================
-   SLIDE LAYOUT — Editorial paper shell (V4.0)
+   SLIDE LAYOUT — Modern-SaaS shell (matches automate.agenz.my)
    ============================================ */
 
 .slide-layout {
@@ -10,70 +10,67 @@
   background: var(--bg);
 }
 
-/* Soft paper grain — barely-there texture */
-.sl-grain {
+/* Soft top-left → bottom-right wash, like the site hero */
+.sl-wash {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+  background:
+    radial-gradient(1100px 700px at 12% 0%, rgba(42, 63, 212, 0.05), transparent 60%),
+    radial-gradient(1100px 700px at 100% 100%, rgba(18, 168, 107, 0.05), transparent 60%);
 }
 
-/* Faint structural grid — large, restrained */
-.sl-grid {
+/* Masthead */
+.sl-masthead {
   position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.55;
-  background-image:
-    linear-gradient(to right, rgba(44, 43, 42, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(44, 43, 42, 0.035) 1px, transparent 1px);
-  background-size: 240px 240px;
-}
-
-/* Inset hairline frame */
-.sl-frame {
-  position: absolute;
-  inset: 40px;
-  z-index: 1;
-  pointer-events: none;
-  border: 1px solid rgba(44, 43, 42, 0.12);
-}
-
-/* Corner mastheads — JetBrains Mono chrome */
-.sl-mast {
-  position: absolute;
+  top: 46px;
+  left: 150px; /* clear the fixed top-left control buttons */
+  right: 96px;
   z-index: 6;
-  pointer-events: none;
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 2.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sl-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sl-brand-mark {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.sl-brand-word {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+}
+
+.sl-masthead-ref {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--asphalt);
+  color: var(--faint);
 }
 
-.sl-mast-dim { color: var(--dust); }
-
-.sl-mast-tl { top: 56px; left: 64px; }
-.sl-mast-tr { top: 56px; right: 64px; }
-.sl-mast-bl { bottom: 56px; left: 64px; color: var(--dust); font-size: 13px; }
-.sl-mast-br { bottom: 56px; right: 64px; font-size: 17px; color: var(--charcoal); }
-
-/* Corner ticks — short L marks */
-.sl-tick {
+.sl-masthead-rule {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  z-index: 6;
-  pointer-events: none;
+  top: 98px;
+  left: 96px;
+  right: 96px;
+  height: 1px;
+  background: var(--line);
+  z-index: 5;
 }
-.sl-tick-tl { top: 40px; left: 40px; border-top: 1.5px solid var(--charcoal); border-left: 1.5px solid var(--charcoal); }
-.sl-tick-tr { top: 40px; right: 40px; border-top: 1.5px solid var(--charcoal); border-right: 1.5px solid var(--charcoal); }
-.sl-tick-bl { bottom: 40px; left: 40px; border-bottom: 1.5px solid var(--charcoal); border-left: 1.5px solid var(--charcoal); }
-.sl-tick-br { bottom: 40px; right: 40px; border-bottom: 1.5px solid var(--charcoal); border-right: 1.5px solid var(--charcoal); }
 
 /* Content Area */
 .sl-content {
@@ -85,5 +82,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 120px;
+  padding: 120px 128px 100px;
+}
+
+/* Footer chrome */
+.sl-footer {
+  position: absolute;
+  bottom: 44px;
+  left: 96px;
+  right: 96px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--faint);
 }

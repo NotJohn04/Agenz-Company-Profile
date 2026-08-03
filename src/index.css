@@ -1,34 +1,45 @@
 /* ============================================
-   AGENZ V4.0 — Editorial design tokens
-   "Contemporary Youth Editorial Realism"
+   AGENZ — Modern-SaaS system (matches automate.agenz.my)
+   Ivory canvas · Geist bold mixed-case · blue→teal→green accents
    ============================================ */
 :root {
-  /* Primary editorial palette */
+  /* Canvas + ink */
+  --bg: #F4F1EB;         /* soft ivory */
+  --card: #FBFAF6;       /* near-white card fill on ivory */
+  --ink: #111418;        /* near-black — headings + key text */
+  --slate: #586873;      /* body / secondary */
+  --muted: #5B6870;      /* labels */
+  --faint: #93A1A9;      /* chrome / footers */
+  --line: #E6E8EA;       /* hairlines / borders */
+  --mist: #F4F5F6;       /* soft fill / table header */
+
+  /* Brand accent ramp */
+  --blue: #2A3FD4;
+  --teal: #0E9FC7;
+  --green: #12A86B;
+
+  /* Type system — Geist only */
+  --font-display: 'Geist', system-ui, sans-serif;
+  --font-serif: 'Geist', system-ui, sans-serif;
+  --font-body: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist', system-ui, sans-serif;
+
+  /* Legacy aliases — keep old var names working, remapped to new system.
+     Solid accents (var --cyan/--purple/--blue) become the brand ramp;
+     structural neutrals map to ink/slate/line. */
+  --cyan: #0E9FC7;    /* → teal (primary accent) */
+  --purple: #12A86B;  /* → green (secondary accent) */
+  --charcoal: #111418;
+  --asphalt: #586873;
+  --dust: #93A1A9;
   --ivory: #F4F1EB;
   --paper: #EAE4DA;
-  --dust: #A8A39B;
-  --charcoal: #2C2B2A;
-  --asphalt: #4B4946;
   --sky: #AFC7E9;
-  --denim: #6D7D95;
-  --beige: #DCC4A3;
-  --tan: #B8946A;
+  --denim: #2A3FD4;
+  --beige: #E6E8EA;
+  --tan: #12A86B;
 
-  /* Type system */
-  --font-display: 'Anton', 'Geist', sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-body: 'Geist', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
-
-  /* Legacy accent aliases — remapped to brand neutrals so existing
-     components shift palette without per-file edits */
-  --cyan: #6D7D95;   /* faded denim — primary accent */
-  --blue: #7C8AA0;   /* muted denim */
-  --purple: #B8946A; /* warm tan */
-
-  /* Semantic */
-  --text: #2C2B2A;
-  --bg: #F4F1EB;
+  --text: #111418;
 }
 
 * {

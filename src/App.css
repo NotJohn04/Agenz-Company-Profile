@@ -69,46 +69,113 @@
 }
 
 /* ============================================
-   GLOBAL EDITORIAL TYPOGRAPHY (V4.0)
-   Loud condensed display + serif accents + mono labels
+   GLOBAL SAAS TYPOGRAPHY — Geist, mixed-case bold
    ============================================ */
 
-/* Loud display — section titles & big numbers */
+/* Headings — Geist bold, mixed case (never all-caps, never serif) */
 [class$="-title"],
 [class$="-price"],
 [class$="-value"],
 .pricing-tier,
-.pricing-price,
-.cover-presented-name {
-  font-family: var(--font-display) !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.5px !important;
+.pricing-price {
+  font-family: var(--font-body) !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  text-transform: none !important;
+  letter-spacing: -0.5px !important;
   -webkit-text-fill-color: currentColor;
   background: none !important;
-  color: var(--charcoal);
+  color: var(--ink);
 }
 
-/* Serif accent — taglines / emphasis lines */
+/* Taglines / emphasis — Geist medium, slate (no serif italic) */
 [class$="-tagline"],
 .svc-detail-tagline,
 .pricing-guarantee-tag {
-  font-family: var(--font-serif) !important;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--asphalt);
-  letter-spacing: 0.3px;
+  font-family: var(--font-body) !important;
+  font-style: normal !important;
+  font-weight: 600;
+  color: var(--slate);
+  letter-spacing: -0.2px;
 }
 
-/* Mono — small labels, units, eyebrows, counters, section indexes */
+/* Micro-labels — Geist UPPERCASE, letter-spaced grey */
 [class$="-unit"],
 [class$="-label"],
 [class$="-eyebrow"],
+.svc-detail-unit {
+  font-family: var(--font-body) !important;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+/* Big index numbers — accent-colored (blue → teal → green cycle) */
 .toc-number,
 .process-step-number,
 .svc-detail-unit {
-  font-family: var(--font-mono) !important;
-  letter-spacing: 1.5px;
+  font-family: var(--font-body) !important;
 }
 
-/* Keep denim accents from reading as "links" — soften to charcoal ink */
-::selection { background: var(--beige); color: var(--charcoal); }
+::selection { background: var(--teal); color: #fff; }
+
+/* ============================================
+   CARD SIGNATURE — colored top border + accent number
+   (matches the numbered feature cards on automate.agenz.my)
+   ============================================ */
+.about-value-card,
+.services-cat-card,
+.svc-detail-card,
+.metric-card,
+.process-step,
+.pricing-card {
+  background: var(--card) !important;
+  border: 1px solid var(--line) !important;
+  border-top: 3px solid var(--ink) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 2px rgba(17, 20, 24, 0.04) !important;
+}
+
+/* Cycle the accent ramp across sibling cards */
+.about-value-card:nth-child(3n+1),
+.services-cat-card:nth-child(3n+1),
+.svc-detail-card:nth-child(3n+1),
+.metric-card:nth-child(3n+1),
+.process-step:nth-child(3n+1) { border-top-color: var(--blue) !important; }
+
+.about-value-card:nth-child(3n+2),
+.services-cat-card:nth-child(3n+2),
+.svc-detail-card:nth-child(3n+2),
+.metric-card:nth-child(3n+2),
+.process-step:nth-child(3n+2) { border-top-color: var(--teal) !important; }
+
+.about-value-card:nth-child(3n+3),
+.services-cat-card:nth-child(3n+3),
+.svc-detail-card:nth-child(3n+3),
+.metric-card:nth-child(3n+3),
+.process-step:nth-child(3n+3) { border-top-color: var(--green) !important; }
+
+/* Accent-colored big numbers, matching each card's top border */
+.metric-card:nth-child(3n+1) .metric-value,
+.process-step:nth-child(3n+1) .process-step-number { color: var(--blue) !important; }
+.metric-card:nth-child(3n+2) .metric-value,
+.process-step:nth-child(3n+2) .process-step-number { color: var(--teal) !important; }
+.metric-card:nth-child(3n+3) .metric-value,
+.process-step:nth-child(3n+3) .process-step-number { color: var(--green) !important; }
+
+/* Black pill — CTA / button convention */
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
