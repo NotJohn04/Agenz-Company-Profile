@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <div className="contact-page">
       <div className="contact-logo-section">
-        <img src="/assets/agenz-monkey.png" alt={companyInfo.name} className="contact-logo" />
+        <img src="/assets/agenz-mark.png" alt={companyInfo.name} className="contact-logo" />
         <span className="contact-wordmark">AGENZ</span>
       </div>
 

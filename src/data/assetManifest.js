@@ -53,5 +53,5 @@ export const imageAssets = [
   '/assets/web-fitness.webp',
   '/assets/web-kstructures.webp',
   '/assets/web-performance.webp',
-  '/assets/agenz-monkey.png',
+  '/assets/agenz-mark.png',
 ]

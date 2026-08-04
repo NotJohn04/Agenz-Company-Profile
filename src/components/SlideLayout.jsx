@@ -9,7 +9,7 @@ function SlideLayout({ children }) {
       {/* Masthead chrome */}
       <div className="sl-masthead">
         <div className="sl-brand">
-          <img src="/assets/agenz-monkey.png" alt="" className="sl-brand-mark" />
+          <img src="/assets/agenz-mark.png" alt="" className="sl-brand-mark" />
           <span className="sl-brand-word">AGENZ</span>
         </div>
         <span className="sl-masthead-ref">COMPANY PROFILE · 2025</span>
